@@ -5,6 +5,7 @@ It is used for:
 •	Software development,
 •	Mathematics, 
 •	System scripting.
+
 Python First Program:-
 Suppose we want to print “Hello World” program in Python, we can do this using one statement.  
 print("Hello world")
@@ -23,8 +24,6 @@ age = 21
 weight = 75.5
 
 Arithmetic operations:-
-#Arithmetic operations
-
 print("The value of 3 + 5 = ", 3+5)
 print("The value of 3 - 5 = ", 3-5)
 print("The value of 3 * 5 = ", 3*5)
