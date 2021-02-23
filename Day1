@@ -1,0 +1,60 @@
+# What is Python?
+Python is a popular programming language.
+## It is used for:
+•	Web development (server-side),
+•	Software development,
+•	Mathematics, 
+•	System scripting.
+## Python First Program:-
+Suppose we want to print “Hello World” program in Python, we can do this using one statement.  
+print("Hello world")
+
+## Python Comments:-
+# This is a single line comment.
+
+'''This is a 
+multiline comment
+'''
+
+## Python Variables:-
+Variables are containers for storing data values.
+sttr = "This is me"
+age = 21
+weight = 75.5
+
+## Arithmetic operations:-
+#Arithmetic operations
+
+print("The value of 3 + 5 = ", 3+5)
+print("The value of 3 - 5 = ", 3-5)
+print("The value of 3 * 5 = ", 3*5)
+print("The value of 3 / 5 = ", 3/5)
+print("The value of 3 ** 5 = ", 3**5)
+print("The value of 3 // 5 = ", 3//5)
+
+## Python Indentation:-
+Indentation refers to the spaces at the beginning of a code line. Python use indentation to indicate a block of code.
+if 5 > 2:
+  print("Five is greater than two!")
+
+## Python Data Types:-
+Python has many data types like str, int, float, complex, list, tuple etc.
+#getting the data type
+x = 5
+print(type(x))
+
+## Python Lists:-
+Lists are used to store multiple items in a single variable.
+# Lists
+colleges = ['IIT', 'NIT', 'College of engineering']
+print(colleges[2])
+
+## Python tuples:-
+Tuples are also used to store multiple items in a single variable but it is unchangeable.
+# Tuples
+tup1 = (1, 2, 3)
+list1 = list(tup1)
+print(list1)
+print(tup1[0])
+
+
