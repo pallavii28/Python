@@ -1,0 +1,39 @@
+Using Modules & Pip In Python:-
+Module – Module or library is a file that contains definitions of several functions, classes, variables, etc. which is written by someone else for us to use.
+Pip – Pip is a package manager for Python i.e., pip command can be used to download any external module in Python. It is something that helps us to get code written by someone else from somewhere.
+We can install a module in our system by using pip command.
+Example, for installing flask I will do this:-  pip install flask
+After installing any module in Python, we can import it into our program or our Python projects. For example, to use flask, I will type "import flask" at the top of my Python program.
+There are two types of modules in Python:
+
+Built-in Modules:
+Built-in modules are the modules that are pre-installed in Python i.e., there is no need to download them before using. These modules come with python interpreter itself.
+Example – random, os, etc.
+External Modules: These are the modules that are not pre-installed in Python i.e., we need to download them before using them in our program.
+Example – Flask, Pandas, TensorFlow, etc.
+
+Strings:-
+String is a data type in Python. Strings in Python programming language are arrays of bytes representing a sequence of characters. In simple terms, Strings are the combination or collection of characters enclosed in quotes.
+
+Some of the most used string functions :
+
+replace()	           Returns a string where a specified value is replaced with a specified value
+count()	             Returns the number of times a specified value occurs in a string
+endswith()	         Returns true if the string ends with the specified value
+capitalize()	       Converts the first character to upper case
+upper()	             Converts a string into upper case
+lower()	             Converts a string into lower case
+
+
+input() Function – This function allows the user to receive input from the keyboard into the program as a string. input() function always takes input as a string. we will have to typecast it into another data type as per the use case.
+
+ 
+
+Swapping of two numbers:-
+Python provides a very handy way of swapping two numbers like below:
+
+
+ 
+
+
+
