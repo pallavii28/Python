@@ -52,7 +52,7 @@ Using With Block To Open Python Files:-
 There is more than one way to open and close a file. We will see how we can use, with block to open and close a file, including syntax and benefits.
 We will be using f as our file’s object.
 
-how the with block works?
+How the with block works?
 
 With open(“file_name.txt”) as f:
 
