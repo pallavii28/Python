@@ -1,0 +1,86 @@
+Python Dictionary:
+“Python dictionary is an unordered collection of items. Each item of the dictionary has a key and value pair/ key-value pair.”
+
+d2 = {"Purnima":"Burger",
+      "Rohan":"Fish",
+      "Pallavi":"Roti",
+      "Shubham":{"B":"maggie", "L":"roti", "D":"Chicken"}}
+
+If Else & Elif Conditionals In Python:
+“If, else and elif statement can be defined as a multiway decision taken by our program due to the certain conditions in our code.”
+
+print("What is your age?")
+age = int(input())
+if age<18:
+    print("You cannot drive")
+
+elif age==18:
+    print("We will think about you")
+
+else:
+    print("You can drive")
+
+# Short hand if else
+print("What is your age?")
+age = int(input())
+print("You can drive") if(age>18) else print("You cannot drive")
+
+
+ 
+Python supports many sorts of shorthand statements and with the help of these statements, we can write our code in a more compact sort or form using less space.
+
+Functions in Python:
+ “Functions in Python can be defined as lines of codes that are built to create a specific task and can be used again and again in a program when called.”
+
+There are two types of functions in the Python language:
+•	Built-in functions
+•	User-defined functions
+
+# a = 9
+# b = 8
+# c = sum((a, b)) # built in function
+
+def function2(a, b):
+    """This is a function which will calculate average of two numbers
+    this function doesnt work for three numbers"""
+    average = (a+b)/2
+    return average
+
+v = function2(5, 7)
+print(v)
+print(function2.__doc__)
+
+ 
+Loops In Python:
+ 
+# For loop
+list1 = [ ["Pallavi", 1], ["Purnima", 2],
+          ["Priyal", 6], ["Riya", 250]]
+dict1 = dict(list1)
+for item in dict1:
+    print(item)
+
+# While loop
+while(True):
+    inp = int(input("Enter a Number\n"))
+    if inp>100:
+        print("Congrats you have entered a number greater than 100\n")
+        break
+    else:
+        print("Try again!\n")
+        continue
+
+Exception Handing in Python:
+
+print("Enter num 1")
+num1 = input()
+print("Enter num 2")
+num2 = input()
+try:
+    print("The sum of these two numbers is",
+          int(num1)+int(num2))
+except Exception as e:
+    print(e)
+
+print("Hello!!")
+
