@@ -1,0 +1,55 @@
+
+In this week I have learnt more about python for this project.
+Python File IO Basics:-
+•	“r” -  r mode opens a file for read-only-default
+•	“w” -  w mode opens a file for write
+•	“x” - used to create a new file
+•	“a” - add more content to file 
+•	“t” - text mode-default 
+•	“b” - binary mode
+•	“r+” - for read and write 
+Open(), Read() & Readline() For Reading File:-
+How to open a file?
+Python has a built-in open() function to open a file.
+The syntax of the function is:
+open("filename" ,"mode")
+
+How to read a file?
+To read a file in Python, there are various methods available,
+•	We can read a whole file line by line using a for loop in combination with an iterator. This will be a fast and efficient way of reading data.
+•	When opening a file for reading, Python needs to know exactly how the file should be opened. Two access modes are available reading (r), 
+and reading in binary mode (rb). They have to be specified during opening a file with the built-in open() method.
+	
+f = open("myfile.txt", "r")
+
+The read() method reads the whole file by default. We can also use the read(size) method where you can specify how many characters we want to return i.e.
+
+ f.read(2); #Here, you will get the first two characters of the file.
+
+It is always the best practice to close a file after you are done performing operations on it.
+Python has a build-in close() function to close a file i.e;
+f.close()
+
+Seek(), tell() & More On Python Files:-
+
+seek():-
+When we open a file, the system points to the beginning of the file. Any read or write will happen from the start. To change the file object’s position, 
+use seek(offset, whence) function.
+
+tell():-
+When we are working with python files, there are several ways to present the output of a program, it could be in human-readable form or binary form,
+or we use read() function with specified sie to read some data.
+
+ 
+
+Using With Block To Open Python Files:-
+There is more than one way to open and close a file. We will see how we can use, with block to open and close a file, including syntax and benefits.
+We will be using f as our file’s object.
+
+how the with block works?
+
+With open(“file_name.txt”) as f:
+
+f being the object of the file. The important thing to note is, there is no close() function required. After running the code in the block, 
+the file will automatically be closed.  
+
