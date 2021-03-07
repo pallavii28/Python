@@ -1,3 +1,4 @@
+In this week I have learnt about Python File IO Basics, Open(), Read() & Readline() For Reading File, Seek(), tell() and Using With Block To Open Python Files.
 Python File IO Basics:-
 •	“r” -  r mode opens a file for read-only-default
 •	“w” -  w mode opens a file for write
