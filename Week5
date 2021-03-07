@@ -31,7 +31,7 @@ def print_Number():
 
 Recursions: Recursive Vs Iterative Approach
 "Recursion occurs when a function calls itself."
-Mostly both recursion and iteration are used in association with loops, but both are very different from each other. In both recursion and iteration, 
+Mostly both recursion and iteration are used in association with loops, but both are very different from each other. In both recursion and iteration,
 the goal is to execute a statement again and again until a specific condition is fulfilled. An iterative loop ends when it has reached the end of its sequence; for example,
 if we are moving through a list, then the loop will stop executing when it reached the end of the list. But in the case of recursion, 
 the function stops terminating when a base condition is satisfied. 
