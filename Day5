@@ -1,0 +1,82 @@
+Scope, Global Variables and Global Keyword
+
+What is Scope in Python?
+Scope refers to the coding area where a particular Python variable is accessible. Hence one cannot access any particular variable from anywhere from the code. A variable is a label for a location in memory. It holds a value. Not all variables are accessible, and not all variables exist for the same amount of time.
+Where the variables defined determines that is it accessible or not, and how long it will exist.
+Local vs. Global Variables
+
+Local Variable:-
+A variable that is declared inside a function or loop is called a local variable. Local variables cannot be accessed outside the function. 
+For Example,
+def sum():
+      a=10 #local variable cannot be accessed outside the function
+      b=20
+      sum=a+b
+      print( sum)
+print(a) #this gives an error
+
+When we try to access variable “a” outside the function, it will give an error. It is accessible within the function only.
+
+Global Variable:-
+On the other hand, a global variable is not declared inside the function and can be accessed anywhere within a program.
+For Example,
+a=1  #global variable
+def print_Number():
+            a=a+1;
+            print(a)
+ print_number()
+
+Recursions: Recursive Vs Iterative Approach
+"Recursion occurs when a function calls itself."
+Mostly both recursion and iteration are used in association with loops, but both are very different from each other. In both recursion and iteration, the goal is to execute a statement again and again until a specific condition is fulfilled. An iterative loop ends when it has reached the end of its sequence; for example, if we are moving through a list, then the loop will stop executing when it reached the end of the list. But in the case of recursion, the function stops terminating when a base condition is satisfied. 
+Recursion vs. Iteration:
+•	Recursion can only be applied to a function, while iteration can be used for any number of lines of code, we want to repeat
+•	Lesser coding has to be done in case of recursion than iteration
+•	Back tracing or reverse engineering in case of recursion can be difficult.
+•	In the case of recursion, if the condition is not met, the system will repeat a few times and then crash while in case of iteration it will continue to run endlessly.
+•	Even though less coding has to be written in case of recursion, it is still slower in execution because the function has to be called again, and again, storing data into the stack also increases the time of execution.
+ 
+ 
+# n! = n * n-1 * n-2 * n-3.......1
+# n! = n * (n-1)!
+def factorial_iterative(n):
+    """
+        :param n: Integer
+        :return: n * n-1 * n-2 * n-3.......1
+    """
+    fac = 1
+    for i in range(n):
+        fac = fac * (i+1)
+    return fac
+
+def factorial_recursive(n):
+    """
+        :param n: Integer
+        :return: n * n-1 * n-2 * n-3.......1
+    """
+    if n ==1:
+        return 1
+    else:
+        return n * factorial_recursive(n-1)
+    # 5 * factorial_recursive(4)
+    # 5 * 4 * factorial_recursive(3)
+    # 5 * 4 * 3 * factorial_recursive(2)
+    # 5 * 4 * 3 * 2 * factorial_recursive(1)
+    # 5 * 4 * 3 * 2 * 1 = 120
+
+# 0 1 1 2 3 5 8 13
+def fibonacci(n):
+    if n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return fibonacci(n-1)+ fibonacci(n-2)
+
+
+number = int(input("Enter then number"))
+# print("Factorial Using Iterative Method", factorial_iterative(number))
+# print("Factorial Using Recursive Method", factorial_recursive(number))
+print(fibonacci(number))
+  
+For smaller programs where there are lesser lines of codes, we should use a recursive approach and in complex programs, we should go with iteration to reduce the risk of bugs.
